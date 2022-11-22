@@ -1,0 +1,31 @@
+Started by user [8mha:////4GK9AMmIGGZXgf24VS3Vo3lpxe/UGrNU41+phWwZH6cJAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace D:\pythonProject\PythonSelfFramework
+[PythonSelfFramework] $ cmd /c call C:\Users\Pratik\AppData\Local\Temp\jenkins11782564440761006818.bat
+
+D:\pythonProject\PythonSelfFramework>cd tests 
+
+D:\pythonProject\PythonSelfFramework\tests>py.test --browser_name "chrome" --html=$WORKSPACE/reports/report.html 
+============================= test session starts =============================
+platform win32 -- Python 3.11.0, pytest-7.2.0, pluggy-1.0.0
+rootdir: D:\pythonProject\PythonSelfFramework\tests
+plugins: html-3.2.0, metadata-2.0.4
+collected 3 items
+
+test_e2e.py .                                                            [ 33%]
+test_home.py ..                                                          [100%]
+
+============================== warnings summary ===============================
+conftest.py:36
+  D:\pythonProject\PythonSelfFramework\tests\conftest.py:36: PytestDeprecationWarning: The hookimpl pytest_runtest_makereport uses old-style configuration options (marks or attributes).
+  Please use the pytest.hookimpl(hookwrapper=True) decorator instead
+   to configure the hooks.
+   See https://docs.pytest.org/en/latest/deprecations.html#configuring-hook-specs-impls-using-markers
+    @pytest.mark.hookwrapper
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated html file: file:///D:/pythonProject/PythonSelfFramework/reports/report.html -
+======================== 3 passed, 1 warning in 36.40s ========================
+
+D:\pythonProject\PythonSelfFramework\tests>exit 0 
+Finished: SUCCESS

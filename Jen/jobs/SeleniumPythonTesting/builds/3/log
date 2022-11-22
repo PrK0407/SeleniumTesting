@@ -1,0 +1,37 @@
+Started by user [8mha:////4GK9AMmIGGZXgf24VS3Vo3lpxe/UGrNU41+phWwZH6cJAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace D:\pythonProject\PythonSelfFramework
+[PythonSelfFramework] $ cmd /c call C:\Users\Pratik\AppData\Local\Temp\jenkins17378216012233489697.bat
+
+D:\pythonProject\PythonSelfFramework>cd tests 
+
+D:\pythonProject\PythonSelfFramework\tests>py.test --browser_name "chrome" --html=$WORKSPACE/reports/report.html -v --junitxml="result.xml" 
+============================= test session starts =============================
+platform win32 -- Python 3.11.0, pytest-7.2.0, pluggy-1.0.0 -- C:\Users\Pratik\AppData\Local\Programs\Python\Python311\python.exe
+cachedir: .pytest_cache
+metadata: {'Python': '3.11.0', 'Platform': 'Windows-10-10.0.19044-SP0', 'Packages': {'pytest': '7.2.0', 'pluggy': '1.0.0'}, 'Plugins': {'html': '3.2.0', 'metadata': '2.0.4'}, 'CI': 'true', 'BUILD_NUMBER': '3', 'BUILD_ID': '3', 'BUILD_URL': 'http://localhost:8080/job/SeleniumPythonTesting/3/', 'NODE_NAME': 'built-in', 'JOB_NAME': 'SeleniumPythonTesting', 'BUILD_TAG': 'jenkins-SeleniumPythonTesting-3', 'EXECUTOR_NUMBER': '1', 'JENKINS_URL': 'http://localhost:8080/', 'WORKSPACE': 'D:\\pythonProject\\PythonSelfFramework'}
+rootdir: D:\pythonProject\PythonSelfFramework\tests
+plugins: html-3.2.0, metadata-2.0.4
+collecting ... collected 3 items
+
+test_e2e.py::TestOne::test_e2e PASSED                                    [ 33%]
+test_home.py::TestHome::test_form_submission[getData0] PASSED            [ 66%]
+test_home.py::TestHome::test_form_submission[getData1] PASSED            [100%]
+
+============================== warnings summary ===============================
+conftest.py:36
+  D:\pythonProject\PythonSelfFramework\tests\conftest.py:36: PytestDeprecationWarning: The hookimpl pytest_runtest_makereport uses old-style configuration options (marks or attributes).
+  Please use the pytest.hookimpl(hookwrapper=True) decorator instead
+   to configure the hooks.
+   See https://docs.pytest.org/en/latest/deprecations.html#configuring-hook-specs-impls-using-markers
+    @pytest.mark.hookwrapper
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+-- generated xml file: D:\pythonProject\PythonSelfFramework\tests\result.xml --
+- generated html file: file:///D:/pythonProject/PythonSelfFramework/reports/report.html -
+======================== 3 passed, 1 warning in 33.69s ========================
+
+D:\pythonProject\PythonSelfFramework\tests>exit 0 
+Recording test results
+[Checks API] No suitable checks publisher found.
+Finished: SUCCESS
